@@ -1,90 +1,117 @@
-<p align="center">
-    <a href="https://magento.com">
-        <img src="https://static.magento.com/sites/all/themes/magento/logo.svg" width="300px" alt="Magento Commerce" />
-    </a>
-    <br />
-    <br />
-    <a href="https://www.codetriage.com/magento/magento2">
-        <img src="https://www.codetriage.com/magento/magento2/badges/users.svg" alt="Open Source Helpers" />
-    </a>
-    <a href="https://gitter.im/magento/magento2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge">
-        <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" />
-    </a>
-    <a href="https://crowdin.com/project/magento-2">
-        <img src="https://d322cqt584bo4o.cloudfront.net/magento-2/localized.svg" alt="Crowdin" />
-    </a>
-</p>
+# 🛍️ Proyecto de Tienda Ecommerce en Magento 2 🛒
 
-# Welcome
+## Descripción del Proyecto 📦
 
-Welcome to Magento 2 installation! We're glad you chose to install Magento 2, a cutting-edge, feature-rich eCommerce solution that gets results.
+Este proyecto es una **tienda ecommerce** creada con **Magento 2**, diseñada para ofrecer una experiencia de compra personalizada y optimizada. La tienda incluye **métodos de envío y pago personalizados**, **plugins de Amasty** para mejorar la funcionalidad, e integraciones robustas con sistemas ERP y CRM, proporcionando un flujo de datos continuo y eficiente para la gestión de inventarios, pedidos y clientes.
 
-## Magento System Requirements
+## Funcionalidades Principales 🎯
 
-[Magento System Requirements](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html).
+- **Métodos de Envío Personalizados 🚚**: Configuración de métodos de envío a medida, adaptados a diferentes zonas geográficas y preferencias de entrega.
+- **Métodos de Pago Personalizados 💳**: Integración de opciones de pago personalizadas para atender a las necesidades específicas de los clientes.
+- **Plugins Amasty 🔌**: Integración de módulos Amasty para mejorar la funcionalidad, optimizando aspectos como la gestión de pedidos, experiencia de usuario y SEO.
+- **Integración ERP ⚙️**: Sincronización bidireccional con el sistema ERP para mantener actualizados los inventarios, precios y datos de pedidos en tiempo real.
+- **Integración CRM 🤝**: Conexión con un CRM para la gestión de relaciones con los clientes, permitiendo un seguimiento detallado de interacciones, preferencias y comportamiento de compra.
+- **Gestión de Inventario Multi-Almacén 🏢**: Configuración avanzada de inventarios para múltiples almacenes, permitiendo la zonificación de productos y optimización del stock.
+- **Automatización de Marketing 🎯**: Integración de herramientas de automatización de marketing para envíos de correos personalizados, notificaciones, y campañas de retargeting.
 
-## Install Magento
+## Beneficios de Usar Magento 2 para Ecommerce 🚀
 
-* [Installation Guide](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html).
+Magento 2 es una plataforma sólida y flexible para ecommerce, especialmente útil en proyectos de gran escala que requieren personalización y alta performance. A continuación, algunos de los beneficios clave:
 
-## Learn More About GraphQL in Magento 2
+- **Escalabilidad y Rendimiento 🔥**: Magento 2 está diseñado para manejar grandes catálogos de productos y alto tráfico, asegurando una experiencia rápida y sin interrupciones para el usuario.
+  
+- **Ecosistema de Extensiones Amasty 🌐**: Los plugins Amasty mejoran la funcionalidad base de Magento 2, desde la gestión de SEO hasta optimizaciones para ventas, mejorando el rendimiento y experiencia de usuario.
 
-* [GraphQL Developer Guide](https://devdocs.magento.com/guides/v2.4/graphql/index.html)
+- **Flexibilidad para Integraciones 🔄**: Magento permite la integración de sistemas externos (ERP, CRM, sistemas de pago y envío) mediante su arquitectura modular, haciendo que el flujo de datos entre plataformas sea ágil y seguro.
 
-## Contributing to the Magento 2 Code Base
+- **Gestión Avanzada de Clientes 👤**: Las herramientas de segmentación y personalización de Magento permiten ofrecer experiencias de compra personalizadas, aumentando la conversión y satisfacción del cliente.
 
-Contributions can take the form of new components or features, changes to existing features, tests, documentation (such as developer guides, user guides, examples, or specifications), bug fixes, optimizations, or just good suggestions.
+- **Soporte para Multi-Almacén y Multi-Moneda 🌍**: Magento 2 soporta configuraciones multi-almacén y múltiples monedas, lo cual es ideal para tiendas con operaciones internacionales o regionales.
 
-To learn about how to contribute, click [here][1].
+- **Arquitectura Orientada a Componentes 🔧**: La arquitectura modular de Magento permite agregar o modificar funcionalidades sin comprometer el rendimiento del sistema.
 
-To learn about issues, click [here][2]. To open an issue, click [here][3].
+## Requisitos Previos 📦
 
-To suggest documentation improvements, click [here][4].
+Para instalar y ejecutar este proyecto, asegúrate de contar con lo siguiente:
 
-[1]: https://devdocs.magento.com/guides/v2.4/contributor-guide/contributing.html
-[2]: https://devdocs.magento.com/guides/v2.4/contributor-guide/contributing.html#report
-[3]: https://github.com/magento/magento2/issues
-[4]: https://devdocs.magento.com
+- PHP >= 7.4
+- Composer
+- MySQL o MariaDB
+- Redis (opcional para caching avanzado)
+- Elasticsearch (para la búsqueda de productos)
+- Node.js y npm (para tareas de frontend)
 
-### Community Maintainers
+## Instalación ⚙️
 
-The members of this team have been recognized for their outstanding commitment to maintaining and improving Magento. Magento has granted them permission to accept, merge, and reject pull requests, as well as review issues, and thanks to these Community Maintainers for their valuable contributions.
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/tu_usuario/tu_proyecto.git
+    cd tu_proyecto
+    ```
 
-[![](https://raw.githubusercontent.com/wiki/magento/magento2/images/maintainers.png)](https://magento.com/magento-contributors#maintainers)
+2. Instala las dependencias de Magento:
+    ```bash
+    composer install
+    ```
 
-### Top Contributors
+3. Configura el archivo `.env` o `app/etc/env.php` con las credenciales de base de datos y otros ajustes.
 
-Magento is thankful for any contribution that can improve our codebase, documentation or increase test coverage. We always recognize our most active members, as their contributions are the foundation of the Magento Open Source platform.
+4. Configura las variables de entorno específicas del ERP, CRM y otros servicios externos en el archivo `.env`.
 
-[![](https://raw.githubusercontent.com/wiki/magento/magento2/images/contributors.png)](https://magento.com/magento-contributors)
+5. Ejecuta las configuraciones iniciales:
+    ```bash
+    php bin/magento setup:install --base-url="http://localhost" \
+    --db-host="localhost" --db-name="mi_base_datos" --db-user="usuario" \
+    --db-password="contraseña" --admin-firstname="admin" \
+    --admin-lastname="user" --admin-email="admin@tienda.com" \
+    --admin-user="admin" --admin-password="admin123" \
+    --language="es_ES" --currency="USD" --timezone="America/Los_Angeles" \
+    --use-rewrites=1
+    ```
 
-### Labels Applied by the Magento Team
+6. Configura permisos para directorios y cachés:
+    ```bash
+    chmod -R 777 var/ pub/ generated/
+    php bin/magento setup:di:compile
+    php bin/magento setup:static-content:deploy -f
+    php bin/magento cache:flush
+    ```
 
-We apply labels to public Pull Requests and Issues to help other participants retrieve additional information about current progress, component assignments, Magento release lines, and much more.
-Please review the [Code Contributions guide](https://devdocs.magento.com/guides/v2.4/contributor-guide/contributing.html#labels) for detailed information on labels used in Magento 2 repositories.
+7. Accede a la aplicación en `http://localhost/admin` con las credenciales configuradas.
 
-## Reporting Security Issues
+## Integraciones 🔗
 
-To report security vulnerabilities or learn more about reporting security issues in Magento software or web sites visit the [Magento Bug Bounty Program](https://hackerone.com/magento) on hackerone. Please create a hackerone account [there](https://hackerone.com/magento) to submit and follow-up on your issue.
+- **ERP**: La integración con el sistema ERP permite la sincronización de inventarios y pedidos en tiempo real, optimizando la gestión de stock y la actualización de datos.
+- **CRM**: La integración con el CRM permite la gestión centralizada de clientes, incluyendo historial de compras, preferencias y seguimiento personalizado.
+- **Plugins Amasty**: Utilizamos una variedad de módulos Amasty para mejorar la experiencia del cliente y optimizar el rendimiento de la tienda.
+  
+### Módulos Amasty Utilizados
 
-Stay up-to-date on the latest security news and patches for Magento by signing up for [Security Alert Notifications](https://magento.com/security/sign-up).
+- **Amasty Improved Layered Navigation**: Mejora la navegación del sitio, permitiendo filtros avanzados y personalizados.
+- **Amasty One Step Checkout**: Optimiza el proceso de checkout para mejorar la conversión.
+- **Amasty Product Labels**: Permite agregar etiquetas personalizadas a productos en promoción o con características especiales.
+  
+## Personalización de Métodos de Envío y Pago 📬💵
 
-## License
+Este proyecto incluye métodos de envío y pago personalizados, desarrollados para cumplir con requisitos específicos de la tienda:
 
-Each Magento source file included in this distribution is licensed under OSL 3.0 or the Magento Enterprise Edition (MEE) license.
+- **Envío por Zona Geográfica**: Calcula las tarifas de envío en función de la región del cliente y el peso del pedido.
+- **Pago en Cuotas**: Permite a los clientes fraccionar sus pagos, una opción popular en el ecommerce de productos de alto valor.
 
-[Open Software License (OSL 3.0)](https://opensource.org/licenses/osl-3.0.php).
-Please see [LICENSE.txt](https://github.com/magento/magento2/blob/2.4-develop/LICENSE.txt) for the full text of the OSL 3.0 license or contact license@magentocommerce.com for a copy.
+## Contribuciones 🤝
 
-Subject to Licensee's payment of fees and compliance with the terms and conditions of the MEE License, the MEE License supersedes the OSL 3.0 license for each source file.
-Please see LICENSE_EE.txt for the full text of the MEE License or visit <https://magento.com/legal/terms/enterprise>.
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-## Community Engineering Slack
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva_funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva_funcionalidad`).
+5. Abre un Pull Request.
 
-To connect with Magento and the Community, join us on the [Magento Community Engineering Slack](https://magentocommeng.slack.com). If you are interested in joining Slack, or a specific channel, send us a request at [engcom@adobe.com](mailto:engcom@adobe.com) or [self signup](https://opensource.magento.com/slack).
+## Licencia 📄
 
-We have channels for each project. These channels are recommended for new members:
+Este proyecto está bajo la licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-* [general](https://magentocommeng.slack.com/messages/C4YS78WE6): Open chat for introductions and Magento 2 questions
-* [github](https://magentocommeng.slack.com/messages/C7KB93M32): Support for GitHub issues, pull requests, and processes
-* [public-backlog](https://magentocommeng.slack.com/messages/CCV3J3RV5): Discussions of the Magento 2 backlog
+---
+
+¡Gracias por tu interés en este proyecto de ecommerce! 💻🛍️
